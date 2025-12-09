@@ -11,13 +11,13 @@ const Home: React.FC = () => {
         <div className="w-full max-w-md text-center">
           <div className="relative w-40 h-40 mx-auto mb-6">
             <img 
-              alt="ONYX IKONGHO" 
+              alt="ONYX IKONGO" 
               className="w-full h-full rounded-full object-cover" 
               src={onyxPhoto} 
             />
             
           </div>
-          <p className="text-primary font-semibold text-lg mb-2">Bonjour, je suis onyx ikongho</p>
+          <p className="text-primary font-bold text-lg mb-2">Bonjour, je suis onyx ikongo</p>
           <h1 className="text-text-primary tracking-tight text-4xl md:text-5xl font-bold leading-tight">Fullstack Developer</h1>
           <p className="text-text-secondary text-lg mt-4 max-w-sm mx-auto">
             J'imagine et construis des expériences web puissantes, fluides et évolutives, en maîtrisant toute la chaîne : front-end, back-end et infrastructure.
