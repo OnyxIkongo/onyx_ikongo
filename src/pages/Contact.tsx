@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
-import { Mail, Phone, Send, Loader2, CheckCircle } from 'lucide-react'
+import {  Send, Loader2, CheckCircle } from 'lucide-react'
 
 const Contact: React.FC = () => {
   const navigate = useNavigate()
