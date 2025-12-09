@@ -1,74 +1,52 @@
-# React + TypeScript + Vite
+⚡ Portfolio Personnel - Onyx Ikongho
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
+![Vite](https://img.shields.io/badge/Vite-B73BFE?style=for-the-badge&logo=vite&logoColor=FFD62E)
 
-Currently, two official plugins are available:
+> Bienvenue sur le dépôt de mon portfolio personnel. Ce projet a pour but de présenter mon parcours, mes compétences techniques, mes projets réalisés ainsi que de fournir un moyen simple de me contacter et de télécharger mon CV.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## 🖼️ Aperçu
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+*(Insère ici une capture d'écran de ta page d'accueil)*
+![Screenshot du Portfolio](./public/screenshot.png)
 
-## Expanding the ESLint configuration
+## 🛠️ Technologies Utilisées
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+Ce projet a été construit avec une stack moderne axée sur la performance et l'expérience utilisateur :
 
-```js
+*   **Framework :** [React](https://reactjs.org/) (via Vite)
+*   **Langage :** [TypeScript](https://www.typescriptlang.org/) pour un code robuste et typé.
+*   **Styles :** [Tailwind CSS](https://tailwindcss.com/) pour un design responsive et sur-mesure.
+*   **Navigation :** [React Router DOM](https://reactrouter.com/) pour la gestion des pages (SPA).
+*   **Icônes :** [Lucide React](https://lucide.dev/) & Material Symbols.
+*   **Formulaire :** Intégration API via [Formspree](https://formspree.io/) (Sans backend serveur).
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## ✨ Fonctionnalités Clés
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+*   **🎨 Design Responsive :** S'adapte parfaitement aux mobiles, tablettes et ordinateurs.
+*   **🚀 Navigation Fluide :** Transition entre les pages sans rechargement.
+*   **📝 Formulaire de Contact :** Envoi d'email direct via API (méthode POST).
+*   **📄 Téléchargement de CV :** Accès direct au fichier PDF via le dossier public.
+*   **💼 Galerie de Projets :** Présentation visuelle des travaux réalisés.
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## 📂 Structure du Projet
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Voici un aperçu de l'organisation des fichiers importants :
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+```bash
+Portfolio/
+├── public/
+│   ├── cv/
+│   │   └── CV_2025-12-04_Onyx_Ikongho.pdf  # Fichier du CV
+│   └── vite.svg
+├── src/
+│   ├── components/      # Composants réutilisables (Header, Footer...)
+│   ├── pages/           # Pages principales (Home, Contact, Projects...)
+│   ├── App.tsx          # Point d'entrée et routes
+│   └── main.tsx
+├── index.html
+└── package.json
