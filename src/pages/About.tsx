@@ -1,3 +1,4 @@
+import React from 'react'
 import { useNavigate } from 'react-router-dom'
 import { 
   Mail, 
@@ -8,9 +9,9 @@ import {
   Users, 
   Monitor 
 } from 'lucide-react'
-import onyxPhoto from '../assets/onyx.jpg' 
+import onyxPhoto from '../assets/onyx.jpg'
 
-export default function About() {
+const About: React.FC = () => {
   const navigate = useNavigate()
 
   const skillCategories = [
@@ -72,27 +73,29 @@ export default function About() {
             style={{ backgroundImage: `url("${onyxPhoto}")` }}
           />
           <div>
-            <h2 className="text-3xl font-extrabold text-gray-900 tracking-tight">Onyx Ikongho</h2>
-            <p className="text-lg font-medium text-red-600 mt-1">Fullstack Developer</p>
+Uncaught SyntaxError: The requested module '/src/pages/About.tsx' does not provide an export named 'default' (at App.tsx:4:8)Comprendre cette erreur            <h2 className="text-3xl font-extrabold text-gray-900 tracking-tight">Onyx Ikongho</h2>
+            <p className="text-lg font-medium text-red-600 mt-1">Junior Developer</p>
           </div>
         </section>
         <div className="w-full flex justify-center">
-          <div className="flex flex-col w-full sm:w-auto gap-4 sm:flex-row sm:gap-6">
+          <div className="flex flex-col w-full sm:w-auto gap-4 sm:flex-row sm:gap-6 px-4">
             <a
-  href="/cv/CV_2025-12-04_Onyx_Ikongho.pdf"
-  download="CV_Onyx_Ikongho.pdf"
-  className="w-full sm:w-64 h-12 bg-gray-900 text-white font-bold rounded-xl shadow-lg hover:bg-gray-800 hover:scale-[1.02] transition-all flex items-center justify-center gap-2 active:scale-95 cursor-pointer"
->
-  <span className="material-symbols-outlined text-[20px]">download</span>
-  <span>Télécharger CV</span>
-</a>
+              href="/CV_2026-01-23_Onyx_Ikongho.pdf"
+              download="CV_Onyx_Ikongho.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-full sm:w-64 h-12 bg-gray-900 text-white font-bold rounded-xl shadow-lg hover:bg-gray-800 hover:scale-[1.02] transition-all flex items-center justify-center gap-2 active:scale-95 cursor-pointer text-center"
+            >
+              <span className="material-symbols-outlined text-[20px]">download</span>
+              <span className="truncate">Télécharger CV</span>
+            </a>
 
             <button
               onClick={() => navigate('/contact')}
               className="w-full sm:w-64 h-12 bg-red-600 text-white font-bold rounded-xl shadow-lg hover:bg-red-700 hover:scale-[1.02] transition-all flex items-center justify-center gap-2 active:scale-95"
             >
-              <Mail className="w-5 h-5" />
-              <span>Me Contacter</span>
+              <Mail className="w-5 h-5 flex-shrink-0" />
+              <span className="truncate">Me Contacter</span>
             </button>
           </div>
         </div>
@@ -155,3 +158,5 @@ export default function About() {
     </div>
   )
 }
+
+export default About
