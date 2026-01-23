@@ -73,7 +73,7 @@ const About: React.FC = () => {
             style={{ backgroundImage: `url("${onyxPhoto}")` }}
           />
           <div>
-Uncaught SyntaxError: The requested module '/src/pages/About.tsx' does not provide an export named 'default' (at App.tsx:4:8)Comprendre cette erreur            <h2 className="text-3xl font-extrabold text-gray-900 tracking-tight">Onyx Ikongho</h2>
+            <h2 className="text-3xl font-extrabold text-gray-900 tracking-tight">Onyx Ikongho</h2>
             <p className="text-lg font-medium text-red-600 mt-1">Junior Developer</p>
           </div>
         </section>
