@@ -223,7 +223,7 @@ const Contact: React.FC = () => {
             </svg>
           </a>
         </div>
-        <p className="text-center text-xs text-subtle mt-2">© 2025 onyxikongho. Tous droits réservés.</p>
+        <p className="text-center text-xs text-subtle mt-2">@2026 onyxikongho. Tous droits réservés.</p>
       </footer>
     </div>
   )

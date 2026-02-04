@@ -18,7 +18,7 @@ const Home: React.FC = () => {
             
           </div>
           <p className="text-primary font-bold text-lg mb-2">Bonjour, je suis onyx ikongo</p>
-          <h1 className="text-text-primary tracking-tight text-4xl md:text-5xl font-bold leading-tight">Junior Developer</h1>
+          <h1 className="text-text-primary tracking-tight text-4xl md:text-5xl font-bold leading-tight">Développeur junior</h1>
           <p className="text-text-secondary text-lg mt-4 max-w-sm mx-auto">
             J'imagine et construis des expériences web puissantes, fluides et évolutives, en maîtrisant toute la chaîne : front-end, back-end et infrastructure.
           </p>
@@ -63,7 +63,7 @@ const Home: React.FC = () => {
         <div className="flex-grow"></div>
         <div className="flex justify-center items-end pb-6">
           <div className="flex flex-col items-center gap-1 text-text-secondary">
-            <span className="text-sm font-medium">@2025</span>
+            <span className="text-sm font-medium">@2026</span>
           </div>
         </div>
       </main>
