@@ -74,7 +74,7 @@ const About: React.FC = () => {
           />
           <div>
             <h2 className="text-3xl font-extrabold text-gray-900 tracking-tight">Onyx Ikongho</h2>
-            <p className="text-lg font-medium text-red-600 mt-1">Développeur junior</p>
+            <p className="text-lg font-medium text-red-600 mt-1">Développeur Web Full-Stack</p>
           </div>
         </section>
         <div className="w-full flex justify-center">
