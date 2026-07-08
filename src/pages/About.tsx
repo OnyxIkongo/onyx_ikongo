@@ -105,6 +105,50 @@ const About: React.FC = () => {
              </p>
         </section>
 
+        {/* --- EXPÉRIENCES PROFESSIONNELLES --- */}
+        <section className="max-w-5xl mx-auto w-full">
+          <div className="flex items-center gap-3 mb-8 justify-center">
+            <h3 className="text-2xl font-bold text-gray-900">Expériences professionnelles</h3>
+          </div>
+
+          <article className="group flex flex-col bg-white rounded-2xl p-6 shadow-sm border border-gray-100 hover:border-red-100 hover:shadow-md transition-all duration-300">
+            <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-3">
+              <div>
+                <h4 className="text-lg font-bold text-gray-900 leading-tight">
+                  Développeur Web et Mobile
+                </h4>
+                <p className="text-gray-700 font-semibold mt-1">Ingenious City</p>
+              </div>
+              <div className="text-sm text-gray-500 sm:text-right">
+                <p className="font-semibold text-gray-600">Depuis février 2026</p>
+                <p>Kinshasa, RDC</p>
+              </div>
+            </div>
+
+            <p className="text-gray-600 leading-relaxed text-sm md:text-base mt-4">
+              Participation à la conception, au développement et à l’amélioration de plusieurs plateformes digitales internes, notamment la réservation, la gestion des présences, le jury, la feuille de temps, le LMS et le site principal.
+            </p>
+
+            <div className="flex flex-wrap gap-2 mt-5 pt-4 border-t border-gray-50">
+              {[
+                "Réservation",
+                "Présences",
+                "Jury",
+                "Feuille de temps",
+                "LMS",
+                "Site principal"
+              ].map((tag) => (
+                <span
+                  key={tag}
+                  className="px-3 py-1.5 bg-gray-50 text-gray-700 text-sm font-medium rounded-lg border border-gray-200 group-hover:border-red-50 group-hover:bg-red-50/30 transition-colors"
+                >
+                  {tag}
+                </span>
+              ))}
+            </div>
+          </article>
+        </section>
+
         {/* --- GRILLE DES COMPÉTENCES --- */}
         <section>
           <div className="flex items-center gap-3 mb-8 justify-center">

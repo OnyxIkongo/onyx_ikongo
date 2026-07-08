@@ -1,5 +1,6 @@
 import { useNavigate } from 'react-router-dom'
 import { 
+  Building2,
   Code2, 
   Layout, 
   Server,
@@ -24,12 +25,60 @@ export default function Projects() {
       stack: ["React", "TypeScript", "Tailwind CSS", "Vite", "SPA"]
     },
     {
-      title: "Pacifiqu'Info",
-      category: "Site d'information",
-      icon: <Sparkles className="w-5 h-5 text-indigo-600" />,
-      image: "/logo.png",
-      description: "Création d'un site d'information baptisé Pacifiqu'Info : front-end React, API et gestion des posts d'actualité via Sanity. Intégration d'une radio en ligne pour le streaming audio en continu.",
-      stack: ["React", "Sanity", "API", "Posts d'actualité", "Radio online"]
+      title: "Ingenious City — Plateforme de réservation",
+      category: "Produit interne",
+      icon: <Building2 className="w-5 h-5 text-rose-600" />,
+      image: "/ingeniouscity-logo.png",
+      description: "Conception et développement d’une plateforme de réservation pour les événements, espaces et services, avec une expérience utilisateur claire et un parcours de réservation fluide.",
+      stack: ["Réservation", "UX", "Workflow", "Responsive"]
+    },
+    {
+      title: "Ingenious City — Gestion des présences",
+      category: "Suivi & reporting",
+      icon: <Building2 className="w-5 h-5 text-rose-600" />,
+      image: "/ingeniouscity-logo.png",
+      description: "Mise en place d’une plateforme de suivi des participants (présences, retards, absences) incluant la gestion des justificatifs et la consultation rapide des statuts.",
+      stack: ["Présences", "Suivi", "Justificatifs", "Tableaux"]
+    },
+    {
+      title: "Ingenious City — Plateforme du jury",
+      category: "Évaluation",
+      icon: <Building2 className="w-5 h-5 text-rose-600" />,
+      image: "/ingeniouscity-logo.png",
+      description: "Développement d’un espace jury pour l’évaluation structurée des entrepreneurs, avec un flux d’analyse et de notation pensé pour être rapide et cohérent.",
+      stack: ["Évaluation", "Notation", "Workflow", "Interface"]
+    },
+    {
+      title: "Ingenious City — Feuille de temps",
+      category: "Productivité",
+      icon: <Building2 className="w-5 h-5 text-rose-600" />,
+      image: "/ingeniouscity-logo.png",
+      description: "Création d’une plateforme de feuille de temps pour le suivi des tâches et des heures de travail, facilitant la saisie, la consultation et le pilotage.",
+      stack: ["Timesheet", "Tâches", "Heures", "Suivi"]
+    },
+    {
+      title: "Ingenious City — LMS (mise à jour)",
+      category: "E-learning",
+      icon: <Building2 className="w-5 h-5 text-rose-600" />,
+      image: "/ingeniouscity-logo.png",
+      description: "Amélioration de la plateforme LMS pour la gestion des cours et des contenus, avec des ajustements UI et une meilleure structuration des parcours.",
+      stack: ["LMS", "Cours", "Contenus", "UI"]
+    },
+    {
+      title: "Ingenious City — Site principal (mise à jour)",
+      category: "Web institutionnel",
+      icon: <Building2 className="w-5 h-5 text-rose-600" />,
+      image: "/ingeniouscity-logo.png",
+      description: "Mise à jour du site principal d’Ingenious City (contenu, sections, cohérence visuelle), en veillant aux performances et à l’affichage multi-écrans.",
+      stack: ["Site vitrine", "Performance", "Responsive", "Cohérence"]
+    },
+    {
+      title: "Ingenious City — Proposition de redesign",
+      category: "UI/UX",
+      icon: <Building2 className="w-5 h-5 text-rose-600" />,
+      image: "/ingeniouscity-logo.png",
+      description: "Proposition d’un nouveau design pour moderniser le site principal, avec une approche plus actuelle, lisible et alignée sur l’identité de la marque.",
+      stack: ["UI/UX", "Design", "Modernisation", "Identité"]
     },
     {
       title: "Portfolio Vitrine V1",
